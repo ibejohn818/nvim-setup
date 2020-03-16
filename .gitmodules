@@ -55,3 +55,9 @@
 [submodule "plugins/youcompleteme"]
 	path = plugins/youcompleteme
 	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "langs/one-dark-theme"]
+	path = langs/one-dark-theme
+	url = https://github.com/joshdick/onedark.vim.git
+[submodule "langs/polyglot"]
+	path = langs/polyglot
+	url = https://github.com/sheerun/vim-polyglot.git

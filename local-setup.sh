@@ -44,4 +44,5 @@ ln -s ${PWD}/.vimrc ${HOME}/.vimrc
 echo "CONFIG SETUP COMPLETE...."
 
 
-
+echo "BUILD SUBMODULES"
+git submodule update --init --recursive

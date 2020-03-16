@@ -20,6 +20,12 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 hi Normal ctermbg=none
 
+"""""""""""
+"" Theme
+""""""""""""
+"g:onedark_termcolors = 256
+colorscheme onedark
+
 ""
 "" Backup and swap files
 ""
@@ -277,3 +283,10 @@ function! HandleLessToCSS()
 		cal system('compile-less '.cwd.'/'.name.'.less &')
 	endif
 endfunction
+
+
+"""""""""""""""
+"" autocomplete
+"""""""""""""""
+
+

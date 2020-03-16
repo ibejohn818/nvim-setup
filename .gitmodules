@@ -1,0 +1,57 @@
+[submodule "plugins/vim-sensible"]
+	path = plugins/vim-sensible
+	url = https://git@github.com/tpope/vim-sensible.git
+[submodule "plugins/vim-pathogen"]
+	path = plugins/vim-pathogen
+	url = https://git@github.com/tpope/vim-pathogen.git
+[submodule "plugins/vim-airline"]
+	path = plugins/vim-airline
+	url = https://git@github.com/vim-airline/vim-airline.git
+[submodule "plugins/vim-ctrlp"]
+	path = plugins/vim-ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "plugins/vim-nerdtree"]
+	path = plugins/vim-nerdtree
+	url = https://git@github.com/scrooloose/nerdtree.git
+[submodule "plugins/vim-nerdcommenter"]
+	path = plugins/vim-nerdcommenter
+	url = https://git@github.com/scrooloose/nerdcommenter.git
+[submodule "plugins/vim-emmet"]
+	path = plugins/vim-emmet
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "plugins/vim-kwbd"]
+	path = plugins/vim-kwbd
+	url = https://git@github.com/rgarver/Kwbd.vim.git
+[submodule "plugins/vim-tagbar"]
+	path = plugins/vim-tagbar
+	url = https://git@github.com/majutsushi/tagbar.git
+[submodule "plugins/vim-tlib"]
+	path = plugins/vim-tlib
+	url = https://git@github.com/tomtom/tlib_vim.git
+[submodule "plugins/vim-buffergator"]
+	path = plugins/vim-buffergator
+	url = https://git@github.com/jeetsukumaran/vim-buffergator.git
+[submodule "plugins/vim-easymotion"]
+	path = plugins/vim-easymotion
+	url = https://git@github.com/easymotion/vim-easymotion.git
+[submodule "plugins/vim-endwise"]
+	path = plugins/vim-endwise
+	url = https://git@github.com/tpope/vim-endwise.git
+[submodule "plugins/vim-eunuch"]
+	path = plugins/vim-eunuch
+	url = https://git@github.com/tpope/vim-eunuch.git
+[submodule "plugins/vim-fugitive"]
+	path = plugins/vim-fugitive
+	url = https://git@github.com/tpope/vim-fugitive.git
+[submodule "plugins/vim-gitgutter"]
+	path = plugins/vim-gitgutter
+	url = https://git@github.com/airblade/vim-gitgutter.git
+[submodule "plugins/vim-repeat"]
+	path = plugins/vim-repeat
+	url = https://git@github.com/tpope/vim-repeat.git
+[submodule "plugins/vim-surround"]
+	path = plugins/vim-surround
+	url = https://git@github.com/tpope/vim-surround.git
+[submodule "plugins/youcompleteme"]
+	path = plugins/youcompleteme
+	url = https://github.com/ycm-core/YouCompleteMe.git

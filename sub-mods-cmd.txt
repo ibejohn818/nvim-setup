@@ -24,6 +24,7 @@ git submodule add https://git@github.com/rgarver/Kwbd.vim.git "plugins/vim-kwbd"
 git submodule add https://git@github.com/majutsushi/tagbar.git "plugins/vim-tagbar"
 git submodule add https://git@github.com/tomtom/tlib_vim.git "plugins/vim-tlib"
 git submodule add https://github.com/ycm-core/YouCompleteMe.git "plugins/youcompleteme"
+git submodule add https://git@github.com/terryma/vim-multiple-cursors.git "plugins/vim-multiple-cursors"
 
 git submodule add https://github.com/sheerun/vim-polyglot.git "langs/polyglot"
 git submodule add https://github.com/joshdick/onedark.vim.git "langs/one-dark-theme"

@@ -61,3 +61,6 @@
 [submodule "langs/polyglot"]
 	path = langs/polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "plugins/vim-multiple-cursors"]
+	path = plugins/vim-multiple-cursors
+	url = https://git@github.com/terryma/vim-multiple-cursors.git

@@ -18,8 +18,6 @@ git submodule add https://git@github.com/airblade/vim-gitgutter.git "plugins/vim
 git submodule add https://git@github.com/tpope/vim-repeat.git "plugins/vim-repeat"
 git submodule add https://git@github.com/tpope/vim-surround.git "plugins/vim-surround"
 git submodule add https://git@github.com/vim-airline/vim-airline.git "plugins/vim-airline"
-git submodule add https://git@github.com/jeetsukumaran/vim-buffergator.git "plugins/vim-buffergator"
-git submodule add https://github.com/mattn/emmet-vim.git "plugins/vim-emmet"
 git submodule add https://git@github.com/rgarver/Kwbd.vim.git "plugins/vim-kwbd"
 git submodule add https://git@github.com/majutsushi/tagbar.git "plugins/vim-tagbar"
 git submodule add https://git@github.com/tomtom/tlib_vim.git "plugins/vim-tlib"

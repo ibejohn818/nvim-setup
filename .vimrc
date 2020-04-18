@@ -1,7 +1,20 @@
 source ~/.vim/plugins/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect('~/.vim/plugins/{}', '~/.vim/langs/{}')
 
-let g:python3_host_prog = '/usr/local/bin/python3.8'
+if has("unix")
+    let s:uname = substitute(system("uname -s"), '\n', '' ,'')
+    if s:uname == "Darwin"
+        let g:python3_host_prog = '/opt/local/bin/python3.8'
+    else
+        let g:python3_host_prog = '/usr/local/bin/python3.8'
+    endif
+
+else
+    let g:python3_host_prog = '/usr/local/bin/python3.8'
+endif
+
+
+
 
 :nnoremap Ω :buffers<CR>:buffer<Space>
 

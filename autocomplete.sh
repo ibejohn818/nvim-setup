@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -e
 HWD=$(pwd)
 
 echo "MAKE LIBS DIR"

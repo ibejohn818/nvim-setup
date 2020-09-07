@@ -13,6 +13,10 @@ else
     let g:python3_host_prog = '/usr/local/bin/python3.8'
 endif
 
+"" fix indents
+:map <F7> gg=G<C-o><C-o>
+
+let g:ycm_clangd_binary_path = "/Users/jhardy/bin/llvm/bin/clangd"
 
 
 
@@ -37,7 +41,8 @@ hi Normal ctermbg=none
 "" Theme
 """"""""""""
 "g:onedark_termcolors = 256
-colorscheme onedark
+"colorscheme onedark
+colorscheme gruvbox
 
 ""
 "" Backup and swap files
@@ -92,21 +97,21 @@ set history=1000 " change history to 1000
 
 " Tab control
 set expandtab " insert tabs rather than spaces for <Tab>
-set smarttab " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
 set tabstop=4 " the visible width of tabs
 set softtabstop=4 " edit as if the tabs are 4 characters wide
 set shiftwidth=4 " number of spaces to use for indent and unindent
+set smarttab " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
 set shiftround " round indent to a multiple of 'shiftwidth'
 
 filetype plugin indent on " Turn on filetype plugins (:help filetype-plugin)
 
 " Tab control for yaml files
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
-autocmd FileType js setlocal shiftwidth=2 tabstop=2
-autocmd FileType vuejs setlocal shiftwidth=2 tabstop=2
-autocmd FileType vue setlocal shiftwidth=2 tabstop=2
-autocmd FileType ts setlocal shiftwidth=2 tabstop=2
+"autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+"autocmd FileType js setlocal shiftwidth=2 tabstop=2
+"autocmd FileType vuejs setlocal shiftwidth=2 tabstop=2
+"autocmd FileType vue setlocal shiftwidth=2 tabstop=2
+"autocmd FileType ts setlocal shiftwidth=2 tabstop=2
 " Tab control for docker-comppose
 autocmd FileType docker-compose setlocal expandtab
 
@@ -290,11 +295,11 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd FileWritePost,BufWritePost *.less :call HandleLessToCSS()
 " Function to handle less compile
 function! HandleLessToCSS()
-	let cwd = expand('<afile>:p:h')
-	let name = expand('<afile>:t:r')
-	if(executable('less'))
-		cal system('compile-less '.cwd.'/'.name.'.less &')
-	endif
+  let cwd = expand('<afile>:p:h')
+  let name = expand('<afile>:t:r')
+  if(executable('less'))
+    cal system('compile-less '.cwd.'/'.name.'.less &')
+  endif
 endfunction
 
 
@@ -302,4 +307,5 @@ endfunction
 "" autocomplete
 """""""""""""""
 
+let NERDTreeShowHidden=1
 

@@ -67,3 +67,6 @@
 [submodule "plugins/vim-gutentags"]
 	path = plugins/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "langs/gruvbox-theme"]
+	path = langs/gruvbox-theme
+	url = https://github.com/morhetz/gruvbox.git

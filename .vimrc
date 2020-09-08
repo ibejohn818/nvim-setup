@@ -1,24 +1,11 @@
 source ~/.vim/plugins/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect('~/.vim/plugins/{}', '~/.vim/langs/{}')
 
-if has("unix")
-    let s:uname = substitute(system("uname -s"), '\n', '' ,'')
-    if s:uname == "Darwin"
-        let g:python3_host_prog = '/opt/local/bin/python3.8'
-    else
-        let g:python3_host_prog = '/usr/local/bin/python3.8'
-    endif
-
-else
-    let g:python3_host_prog = '/usr/local/bin/python3.8'
-endif
-
+let g:python3_host_prog = '/Users/jhardy/miniconda3/envs/default/bin/python'
 "" fix indents
 :map <F7> gg=G<C-o><C-o>
 
 let g:ycm_clangd_binary_path = "/Users/jhardy/bin/llvm/bin/clangd"
-
-
 
 :nnoremap Ω :buffers<CR>:buffer<Space>
 
@@ -309,3 +296,5 @@ endfunction
 
 let NERDTreeShowHidden=1
 
+
+let g:polyglot_disabled = ['typescript']

@@ -1,3 +1,4 @@
+let g:polyglot_disabled = ['typescript', 'vue']
 source ~/.vim/plugins/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect('~/.vim/plugins/{}', '~/.vim/langs/{}')
 
@@ -27,16 +28,37 @@ hi Normal ctermbg=none
 """""""""""
 "" Theme
 """"""""""""
-"g:onedark_termcolors = 256
-"colorscheme onedark
+" Important!!
+if has('termguicolors')
+    set termguicolors
+endif
+
+" ## Gruvbox
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_disable_italic_comment = 1
+let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox
+let g:airline_theme = 'gruvbox_material'
+"
+
+" ## sonokai - onedark like
+" The configuration options should be placed before `colorscheme sonokai`.
+"let g:sonokai_style = 'andromeda'
+"let g:sonokai_enable_italic = 1
+"let g:sonokai_disable_italic_comment = 1
+"colorscheme sonokai
+
+" #########
+"colorscheme onedark
+"let g:onedark_termcolors = 256
+
 
 ""
 "" Backup and swap files
 ""
 
-set backupdir^=~/.vim/_backup//    " where to put backup files.
-set directory^=~/.vim/_temp//      " where to put swap files.
+set backupdir^=~/.config/nvim/_backup    " where to put backup files.
+set directory^=~/.confgi/nvim/_temp      " where to put swap files.
 
 " split navigation
 " nnoremap <C-J> <C-W><C-J>
@@ -48,7 +70,7 @@ nnoremap <C-H> <C-W><C-H>
 :nnoremap <C-K> <C-W><C-K>
 :nnoremap <C-L> <C-W><C-L>
 :nnoremap <C-H> <C-W><C-H>
-
+"let g:gutentags_trace = 1
 
 " eanble mouse
 set mouse=a
@@ -293,8 +315,20 @@ endfunction
 """""""""""""""
 "" autocomplete
 """""""""""""""
-
+"let g:vim_vue_plugin_use_typescript=1
+"let g:vim_vue_plugin_use_scss=1
 let NERDTreeShowHidden=1
 
-
-let g:polyglot_disabled = ['typescript']
+let g:tagbar_type_typescript = {
+  \ 'ctagstype': 'typescript',
+  \ 'kinds': [
+    \ 'c:classes',
+    \ 'n:modules',
+    \ 'f:functions',
+    \ 'v:variables',
+    \ 'v:varlambdas',
+    \ 'm:members',
+    \ 'i:interfaces',
+    \ 'e:enums',
+  \ ]
+\ }

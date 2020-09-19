@@ -22,9 +22,6 @@
 [submodule "plugins/vim-kwbd"]
 	path = plugins/vim-kwbd
 	url = https://git@github.com/rgarver/Kwbd.vim.git
-[submodule "plugins/vim-tagbar"]
-	path = plugins/vim-tagbar
-	url = https://git@github.com/majutsushi/tagbar.git
 [submodule "plugins/vim-tlib"]
 	path = plugins/vim-tlib
 	url = https://git@github.com/tomtom/tlib_vim.git
@@ -67,6 +64,12 @@
 [submodule "plugins/vim-gutentags"]
 	path = plugins/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
-[submodule "langs/gruvbox-theme"]
-	path = langs/gruvbox-theme
-	url = https://github.com/morhetz/gruvbox.git
+[submodule "langs/vim-vue"]
+	path = langs/vim-vue
+	url = https://github.com/posva/vim-vue.git
+[submodule "plugins/vim-go"]
+	path = plugins/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "langs/gruvbox-material-theme"]
+	path = langs/gruvbox-material-theme
+	url = https://github.com/sainnhe/gruvbox-material.git
